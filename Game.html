@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UETM-OS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="tictac.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark bg-gradient p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="Project.html">UETM-OS</a>
+                <button class="navbar-toggler bg-secondary bg-gradient" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" aria-disabled="false">Wish list</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu bg-dark bg-gradient p-0">
+                                <li>
+                                    <a class="dropdown-item" id="dropdowns" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" id="dropdowns" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" id="dropdowns" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="search" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content tex">
+        <div id="main">
+            <h1>TIC TAC TOE Game</h1>
+            <p id="instruction">
+                <br>First Player starts as
+                <b>Player X </b>And Second Player as
+                <b>Player Y</b>
+            </p>
+            <br><br>
+            <div class="ui">
+                <div class="row">
+                    <input type="text" id="b1" class="cell" onclick="myfunc_3(); myfunc();" readonly>
+                    <input type="text" id="b2" class="cell" onclick="myfunc_4(); myfunc();" readonly>
+                    <input type="text" id="b3" class="cell" onclick="myfunc_5(); myfunc();" readonly>
+                </div>
+                <div class="row">
+                    <input type="text" id="b4" class="cell" onclick="myfunc_6(); myfunc();" readonly>
+                    <input type="text" id="b5" class="cell" onclick="myfunc_7(); myfunc();" readonly>
+                    <input type="text" id="b6" class="cell" onclick="myfunc_8(); myfunc();" readonly>
+                </div>
+                <div class="row">
+                    <input type="text" id="b7" class="cell" onclick="myfunc_9(); myfunc();" readonly>
+                    <input type="text" id="b8" class="cell" onclick="myfunc_10();myfunc();" readonly>
+                    <input type="text" id="b9" class="cell" onclick="myfunc_11();myfunc();" readonly>
+                </div>
+            </div>
+            <br><br><br>
+
+            <a href="page3.html">
+                <button type="button" class="btn btn-success">Back</button>
+            </a>
+            <button type="button" class="btn btn-secondary" onclick="myfunc_2()">RESET</button><br><br>
+            <p id="print"></p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid card text-center bg-dark bg-gradient text-white">
+            <!-- <div class="card-header">
+              Featured
+            </div> -->
+            <div class="card-body pt-3">
+                <h5 class="card-title">UETM-OS</h5>
+                <p class="card-text">
+                    Stay Connected & Organized With The UETM-OS
+                </p>
+                <a href="Project.html" class="btn btn-primary mt-3">Go Somewhere</a>
+                <div class="container mt-2" id="logos">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <!-- Arrow UP -->
+                <div id="arrow">
+                    <i class="scroll_top fa-solid fa-arrow-up fa-beat-fade"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="tictactoe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #6c757d;
+}
+
+.main-content {
+  min-height: calc(100vh - 150px);
+  /* padding-bottom: 150px; */
+}
+
+.date {
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 1px #777;
+  color: #bdadad;
+  background-color: #444;
+}
+
+.date:hover {
+  background-color: transparent;
+  color: #244162;
+}
+
+/* Add custom styles for the form container */
+#my-form {
+  background-color: #333;
+  padding: 20px;
+  /* Rounded corners */
+  border-radius: 15px;
+  /* Subtle shadow */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Style the form labels and inputs */
+#my-form label {
+  color: #fff;
+}
+
+#my-form input {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* Style the Login button */
+#my-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+#my-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Arrow UP */
+#arrow {
+  justify-content: right;
+  font-size: 2rem;
+  display: flex;
+  cursor: pointer;
+  margin-left: 100%;
+  margin-bottom: 0px;
+  background-color: black;
+}
+
+#arrow:hover {
+  color: skyblue;
+  opacity: 1;
+}
+
+/* logos hover*/
+#logos i:hover {
+  color: skyblue;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Diplay the error for incorrect Login */
+.error {
+  background: red;
+  color: #fff;
+  border: 2px round red;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+
+  body {
+    background-color: rgb(119, 207, 207);
+  }
+}
+
+/* Page 3  */
+#mainMenu {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 60%;
+}
+
+#mainMenu a {
+  text-decoration: none;
+  /* Remove underlines from links */
+  color: white;
+  /* Text color for menu links */
+}
+
+#mainMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Application  */
+.text-heading {
+  color: #333;
+  text-align: center;
+}
+
+#divText {
+  background-color: #777;
+  padding: 20px;
+  /* Add padding for spacing */
+}
+
+#capitalizedText {
+  font-weight: bold;
+  color: black;
+  background-color: #6c757d;
+  padding: 10px;
+  /* Add padding for spacing */
+  text-align: center;
+  border: none;
+  /* Remove the border */
+}
+
+/* Styling for the textarea */
+#inputText {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#capitalizedText p {
+  overflow: auto;
+  max-height: 200px;
+  /* Adjust the max-height as needed */
+  border: none;
+}
+
+/* Styling for the button */
+#capitalizeButton {
+  margin: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#capitalizeButton:hover {
+  background-color: #0056b3;
+}
+
+/* PhoneBook  */
+#phonebook {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #c2888836;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-height: calc(100vh - 150px);
+  padding-bottom: 2px;
+}
+
+h1 {
+  text-align: center;
+  color: #462e2e;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Display the Names & PhoneNo in list  */
+.displayContacts {
+  list-style: none;
+  margin-top: 20px;
+  border: 2px solid #c2888836;
+  ;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.mydropdown a  {
+  color: white;
+}
+.mydropdown a:hover {
+color: black;
+}
+
+/*  Error (Both Fields required) */
+#errorMessage {
+  background: red;
+  color: #fff;
+  border: 10px round red;
+  width: 100%;
+  border-radius: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+
+  body {
+    background-color: rgb(119, 207, 207);
+  }
+}
+
